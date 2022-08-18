@@ -32,14 +32,20 @@ Partial Class Form1
         Me.furLabel = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.ButtonHL = New System.Windows.Forms.Button()
+        Me.PictureBoxLH = New System.Windows.Forms.PictureBox()
         Me.PictureBoxChinchilla = New System.Windows.Forms.PictureBox()
         Me.CBPictureBox1 = New System.Windows.Forms.PictureBox()
         Me.DisplayPictureBox = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBoxLH, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBoxChinchilla, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CBPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DisplayPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -119,7 +125,7 @@ Partial Class Form1
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(149, 30)
         Me.Button2.TabIndex = 11
-        Me.Button2.Text = "Cinnamon Bunny"
+        Me.Button2.Text = "Cinnamon"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
@@ -130,6 +136,33 @@ Partial Class Form1
         Me.Button3.TabIndex = 22
         Me.Button3.Text = "American Chinchilla"
         Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(492, 0)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(154, 30)
+        Me.Button4.TabIndex = 24
+        Me.Button4.Text = " Lionhead"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'ButtonHL
+        '
+        Me.ButtonHL.Location = New System.Drawing.Point(652, 0)
+        Me.ButtonHL.Name = "ButtonHL"
+        Me.ButtonHL.Size = New System.Drawing.Size(136, 30)
+        Me.ButtonHL.TabIndex = 25
+        Me.ButtonHL.Text = "Holland Lop"
+        Me.ButtonHL.UseVisualStyleBackColor = True
+        '
+        'PictureBoxLH
+        '
+        Me.PictureBoxLH.Image = Global.bunnydex.My.Resources.Resources.download
+        Me.PictureBoxLH.Location = New System.Drawing.Point(492, 30)
+        Me.PictureBoxLH.Name = "PictureBoxLH"
+        Me.PictureBoxLH.Size = New System.Drawing.Size(154, 13)
+        Me.PictureBoxLH.TabIndex = 26
+        Me.PictureBoxLH.TabStop = False
         '
         'PictureBoxChinchilla
         '
@@ -166,11 +199,24 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.bunnydex.My.Resources.Resources.download__1_
+        Me.PictureBox2.Location = New System.Drawing.Point(652, 30)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(136, 13)
+        Me.PictureBox2.TabIndex = 27
+        Me.PictureBox2.TabStop = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.PictureBoxLH)
+        Me.Controls.Add(Me.ButtonHL)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.PictureBoxChinchilla)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.CBPictureBox1)
@@ -187,10 +233,12 @@ Partial Class Form1
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "Form1"
         Me.Text = "Bunny Dex"
+        CType(Me.PictureBoxLH, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBoxChinchilla, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CBPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DisplayPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -210,4 +258,8 @@ Partial Class Form1
     Friend WithEvents CBPictureBox1 As PictureBox
     Friend WithEvents Button3 As Button
     Friend WithEvents PictureBoxChinchilla As PictureBox
+    Friend WithEvents Button4 As Button
+    Friend WithEvents ButtonHL As Button
+    Friend WithEvents PictureBoxLH As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
 End Class

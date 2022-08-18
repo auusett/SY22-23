@@ -23,5 +23,13 @@
         furLabel.Text = "Short & Thick"
 
     End Sub
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        DisplayPictureBox.Image = PictureBoxLH.Image
+        colorLabel.Text = "Multicolored"
+        sizeLabel.Text = "3lbs - 10lbs"
+        furLabel.Text = "Long"
+
+    End Sub
+
 End Class
 
